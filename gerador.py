@@ -16,26 +16,25 @@ def gerar_html():
     outputfile = input("Nome do arquivo de saída (sem extensão .html): ")
     # Template HTML
     html = f"""
-    <html lang="pt-BR">
-    <head>
+   <html lang="pt-BR"><head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Comprovante Inter</title>
         <style>
-            body {{
+            body {
                 font-family: Arial, sans-serif;
-            }}
-            .container {{
+            }
+            .container {
                 margin: 20px;text-align: center
-            }}
-            .linha-pontilhada {{
+            }
+            .linha-pontilhada {
                 border-top: 1px dotted #000;
                 margin: 20px 0;
-            }}
-            .lado {{
+            }
+            .lado {
                 display: flex;
                 justify-content: space-between;
-            }}
+            }
         </style>
     </head>
     <body>
@@ -96,8 +95,8 @@ def gerar_html():
             <h3>Instituição</h3>
             <h2>Banco Inter S.A.</h2>
         </div>
-    </body>
-    </html>
+    
+    </body></html>
     """
 
   
