@@ -14,6 +14,7 @@ def gerar_html():
     nome_pagador = input("Digite o nome do pagador: ")
     cpf_pagador = input("Digite o CPF do pagador (formato ***.nnn.nnn-**): ")
     outputfile = input("Nome do arquivo de saída (sem extensão .html): ")
+    
     # Template HTML
     html = f"""
    <html lang="pt-BR"><head>
@@ -21,20 +22,20 @@ def gerar_html():
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Comprovante Inter</title>
         <style>
-            body {
+            body {{  # Corrigido: escapei as chaves
                 font-family: Arial, sans-serif;
-            }
-            .container {
+            }}
+            .container {{
                 margin: 20px;text-align: center
-            }
-            .linha-pontilhada {
+            }}
+            .linha-pontilhada {{
                 border-top: 1px dotted #000;
                 margin: 20px 0;
-            }
-            .lado {
+            }}
+            .lado {{
                 display: flex;
                 justify-content: space-between;
-            }
+            }}
         </style>
     </head>
     <body>
@@ -85,7 +86,7 @@ def gerar_html():
             <h3>Nome</h3>
         </div>
         <div>
-            <h3>{nome_pagador}</h3>
+            <h <h3>{nome_pagador}</h3>
         </div>
         <div class="lado">
             <h3>CPF/CNPJ</h3>
@@ -99,7 +100,6 @@ def gerar_html():
     </body></html>
     """
 
-  
     # Salvar o HTML em um arquivo
     output = outputfile + ".html"
     with open(output, "w", encoding="utf-8") as file:
