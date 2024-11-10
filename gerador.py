@@ -40,7 +40,7 @@ def gerar_html():
     </head>
     <body>
         <div class="container">
-            <img src="https://brandlogos.net/wp-content/uploads/2023/12/banco_inter-logo_brandlogos.net_qybid-300x78.png" alt="Imagem no topo" style="height:22px; width: 92px;">
+            <img src="https://raw.githubusercontent.com/Jeanpseven/ComprovanteInter/refs/heads/main/logointer.png" alt="Imagem no topo" style="height:22px; width: 92px;">
             <h1>Pix enviado</h1>
             <h1>R$ {valor}</h1>
         </div>
